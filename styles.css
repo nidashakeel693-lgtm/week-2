@@ -1,0 +1,287 @@
+:root {
+  --heading-color: #203d66;
+  --text-color: #b5b0b0;
+  --primary: #007bff;
+  --bg-light: #f8faff;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif, Arial;
+  color: var(--text-color);
+  background-color: #fff;
+  padding: 0;
+  margin: 0;
+}
+ 
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  color: white;
+  margin-bottom: 50px;
+}
+.hero h1 {
+  font-size: 50px;
+  color: #161617;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.hero p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 20px;
+  color: #808080;
+}
+.call-to-action section{
+  max-width: 1200px;
+  margin: 40px auto;
+  background: #f4f6fb;
+  border-radius: 16px;
+  padding: 40px;
+}
+
+/* ASK SECTION RESPONSIVE */
+.ask-section {
+  display: flex;
+  gap: 120px;
+  padding: 40px;
+  background: #fff;
+  border-radius: 16px;
+  max-width: 1200px;
+  margin: auto;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* LEFT */
+.ask-left {
+  flex: 1;
+}
+
+.ask-left h2 {
+  font-size: 14px;
+  letter-spacing: 4px;
+  color: #9aa0a6;
+  margin-bottom: 10px;
+}
+
+.ask-left h1 {
+  font-size: 36px;
+  line-height: 1.8;
+  color: var(--heading-color);
+  margin-bottom: 35px;
+}
+
+.ask-left p {
+  font-size: 16px;
+  color: #777;
+}
+
+/* RIGHT */
+.ask-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.ask-right label {
+  font-size: 14px;
+  color: #555;
+}
+
+.ask-right input,
+.ask-right textarea {
+  width: 100%;
+  padding: 14px;
+  border-radius: 8px;
+  border: 1px solid #e3e6ec;
+  font-size: 15px;
+}
+
+.ask-right textarea {
+  min-height: 110px;
+}
+
+.cta-button {
+  width: 100%;
+  background: #0b4edb;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.faq-section {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 30px;
+}
+
+.faq-heading {
+    font-size: 20px;
+    text-align: left;
+    color: var(--text-color);
+    margin-bottom: 30px;
+}
+
+.faq-item {
+    border: 1px solid #e4e4e4;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.faq-question {
+    width: 100%;
+    text-align: left;
+    padding: 18px 20px;
+    background: white;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--heading-color);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-question:hover {
+    background: #f5f5f5;
+}
+
+.arrow {
+    transition: transform 0.3s ease;
+}
+
+.faq-question.active .arrow {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    padding: 0 20px;
+}
+
+.faq-answer p {
+    color: #555;
+    font-size: 16px;
+    padding: 15px 0;
+}
+
+/* Footer */
+.footer {
+  background: #fff;
+  color: #0d1b2a;
+  padding: 50px 60px 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.footer-section {
+  flex: 1 1 200px;
+}
+
+.footer-logo {
+  width: 100px;
+  margin-bottom: 15px;
+}
+
+.app-buttons img {
+  width: 90px;
+  margin-right: 10px;
+}
+
+.footer-section h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: var(--heading-color);
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: var(--heading-color);
+  transition: color 0.3s;
+}
+.footer hr {
+  margin: 30px 0;
+  border: none;
+  border: 1px solid #ccc;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+}
+
+.footer-bottom img {
+  width: 150px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+   .ask-section {
+    flex-direction: column;
+    padding: 25px;
+  }
+
+  .ask-left h1 {
+    font-size: 24px;
+  }
+  .faq-section {
+    padding: 0 15px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-bottom {
+    font-size: 14px;
+  }
+}
