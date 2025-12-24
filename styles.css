@@ -28,6 +28,17 @@ body {
   padding: 60px 20px;
   color: white;
   margin-bottom: 50px;
+
+/*Gradient background */
+  background: linear-gradient(
+    to right,
+   #f2f4f7 0%,
+    #ffffff 25%,
+    #ffffff 65%,
+    #f2f4f7 100%
+  );
+
+  padding: 80px 60px;
 }
 .hero h1 {
   font-size: 50px;
